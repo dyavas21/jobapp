@@ -59,7 +59,7 @@ class SplashPage extends StatelessWidget {
                   Text(
                     'One of the places where you will find the right job with your field of interest, and you just have to wait for the manager to call you to hire',
                     style: GoogleFonts.dmSans(
-                      color: Color(0xff081D43),
+                      color: Color(0xff6B778E),
                       fontSize: 16,
                     ),
                     textAlign: TextAlign.left,
