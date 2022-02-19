@@ -30,6 +30,7 @@ class SplashPage extends StatelessWidget {
                 top: 298,
                 left: 24,
                 right: 24,
+                bottom: 32,
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -56,12 +57,38 @@ class SplashPage extends StatelessWidget {
                     height: 8,
                   ),
                   Text(
-                      'One of the places where you will find the right job with your field of interest, and you just have to wait for the manager to call you to hire',
-                      style: GoogleFonts.dmSans(
-                        color: Color(0xff081D43),
-                        fontSize: 16,
+                    'One of the places where you will find the right job with your field of interest, and you just have to wait for the manager to call you to hire',
+                    style: GoogleFonts.dmSans(
+                      color: Color(0xff081D43),
+                      fontSize: 16,
+                    ),
+                    textAlign: TextAlign.left,
+                  ),
+                  Spacer(),
+                  InkWell(
+                    onTap: () {
+                      Navigator.pushNamed(context, '/home');
+                    },
+                    child: Container(
+                      width: MediaQuery.of(context).size.width,
+                      height: 64,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(16),
+                        color: Color(0xff5077DF),
                       ),
-                      textAlign: TextAlign.left),
+                      child: Center(
+                        child: Text(
+                          'Get Started',
+                          style: GoogleFonts.dmSans(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w500,
+                            color: Colors.white,
+                            letterSpacing: 2,
+                          ),
+                        ),
+                      ),
+                    ),
+                  )
                 ],
               ),
             )
