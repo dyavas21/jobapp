@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:jobapp/pages/home_page.dart';
+import 'package:jobapp/pages/job_detail_page.dart';
 import 'package:jobapp/pages/splash_page.dart';
 
 void main() {
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => SplashPage(),
         '/home': (context) => HomePage(),
+        '/job-detail': (context) => JobDetailPage(),
       },
     );
   }

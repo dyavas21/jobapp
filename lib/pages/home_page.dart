@@ -139,10 +139,15 @@ class HomePage extends StatelessWidget {
                 scrollDirection: Axis.horizontal,
                 child: Row(
                   children: [
-                    PopularJobCard(
-                      title: 'Senior Graphic Designer',
-                      location: 'Dsgn Agency • Jakarta, Id',
-                      isBlue: true,
+                    InkWell(
+                      onTap: () {
+                        Navigator.pushNamed(context, '/job-detail');
+                      },
+                      child: PopularJobCard(
+                        title: 'Senior Graphic Designer',
+                        location: 'Dsgn Agency • Jakarta, Id',
+                        isBlue: true,
+                      ),
                     ),
                     PopularJobCard(
                       title: 'Senior UX UX Designer',
