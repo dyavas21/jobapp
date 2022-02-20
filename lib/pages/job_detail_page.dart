@@ -235,11 +235,118 @@ class JobDetailPage extends StatelessWidget {
                         ),
                         textAlign: TextAlign.left,
                       ),
+                      SizedBox(
+                        height: 16,
+                      ),
+                      Text(
+                        'Job Responsibilities',
+                        style: GoogleFonts.dmSans(
+                          color: Color(0xff081D43),
+                          fontWeight: FontWeight.w500,
+                          fontSize: 16,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 12,
+                      ),
+                      Row(
+                        children: [
+                          Container(
+                            width: 8,
+                            height: 8,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              color: Color(0xffB5BBC7),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 11,
+                          ),
+                          Text(
+                            'At least have 3 years of experience as a UI Designer',
+                            style: GoogleFonts.dmSans(
+                              fontSize: 12,
+                              color: Color(0xff6B778E),
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(
+                        height: 8,
+                      ),
+                      Row(
+                        children: [
+                          Container(
+                            width: 8,
+                            height: 8,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              color: Color(0xffB5BBC7),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 11,
+                          ),
+                          Text(
+                            'Able to work in a team or individually',
+                            style: GoogleFonts.dmSans(
+                              fontSize: 12,
+                              color: Color(0xff6B778E),
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(
+                        height: 8,
+                      ),
+                      Row(
+                        children: [
+                          Container(
+                            width: 8,
+                            height: 8,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              color: Color(0xffB5BBC7),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 11,
+                          ),
+                          Text(
+                            'Have a good passion in UI Design',
+                            style: GoogleFonts.dmSans(
+                              fontSize: 12,
+                              color: Color(0xff6B778E),
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(
+                        height: 43,
+                      ),
+                      Container(
+                        height: 64,
+                        width: MediaQuery.of(context).size.width,
+                        decoration: BoxDecoration(
+                          color: Color(0xff5077DF),
+                          borderRadius: BorderRadius.circular(16),
+                        ),
+                        child: Center(
+                          child: Text(
+                            'Apply Now',
+                            style: GoogleFonts.dmSans(
+                              color: Colors.white,
+                              fontSize: 16,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 20,
+                      ),
                     ],
                   ),
-                ),
-                SizedBox(
-                  height: 16,
                 ),
               ],
             )
